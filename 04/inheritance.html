@@ -1,68 +1,50 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Inheritance In Action</title>
-<style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body {
-  background-color: rgba(87,185,178,.5);
-}
-p {
-  color: rgb(92,122,142);
-  padding-left: 20px;
-  border-left: solid 25px rgba(255,255,255,.5);
-}
-.content {
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  color: rgb(194,91,116);
-  max-width: 900px;
-  margin: 0 auto;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Inheritance In Action</title>
+  <style>
+    body {
+      background-color: rgba(87,185,178,.5);
+    }
+    p {
+      color: rgb(50,122,167);
+      padding-left: 20px;
+      border-left: solid 25px rgba(255,255,255,.5);
+    }
+    .content {
+      font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      color: rgb(194,91,116);
+      max-width: 900px;
+      margin: 0 auto; 
+    }
+    @keyframes fadeOut {
+      from {opacity: 1;}
+      to {background-color: indigo;}
+    }
+    body {
+      animation-name: fadeOut;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+/*    body {
+      transform: scale(1, -1);
+      transition-property: all;
+      transition-duration: 1s;
+      transition-delay: 0.2s;
+    }
+    body:hover {
+      transform: scale(1, 1);
+      background-color: indianred;
+      color: white;
+      transition-delay: 0.1s;
+    }
+*/  </style>
 </head>
+
 <body class="content">
-<div>
   <h1>The Amazing World of CSS</h1>
   <p><strong>Sed ut perspiciatis</strong> unde omnis iste natus error sit <em>voluptatem accusantium</em> doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo <strong>inventore veritatis et quasi architecto beatae</strong> vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia  eos qui ratione voluptatem sequi nesciunt. Learn more about CSS at the <a href="http://www.w3.org/Style/CSS/">W3C CSS Home Page</a>.</p>
   <ul>
@@ -76,6 +58,5 @@ p {
   <p><strong>Sed ut perspiciatis</strong> unde omnis iste natus error sit <em>voluptatem accusantium</em> doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia  eos qui ratione voluptatem sequi nesciunt. odi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima <strong>veniam, quis nostrum</strong> exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
   <h3>Me Neither!</h3>
   <p><strong>Sed ut perspiciatis</strong> unde omnis iste natus error sit <em>voluptatem accusantium</em> doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia  eos qui ratione voluptatem sequi nesciunt. </p>
-</div>
 </body>
 </html>
