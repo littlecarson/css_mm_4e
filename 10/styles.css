@@ -53,10 +53,7 @@ header {
 	left: 0;
 	-webkit-animation: logo 3s;
 }
-.logo:hover {
-	transition: transform 2s;
-	transform: rotate(-720deg);
-}
+
 header h1 {
 	font-size: 2.2em;
 	margin: 0 0 10px 0;
@@ -84,7 +81,6 @@ nav a {
 	text-shadow:
 		0px -1px 1px rgba(000,000,000,0.2),
 		0px 1px 0px rgba(255,255,255,0.3);
-	/*transition: transform .5s, background-color 1s ease-in;*/
 	transition: all .4s ease-in;
 }
 
@@ -93,6 +89,13 @@ nav a:hover {
 	background-color: red;
 	-webkit-transform: scale(1.5);
 					transform: scale(1.5);
+}
+body {
+	-webkit-transition: transform 10s;
+}
+body:hover {
+	-webkit-transform: rotate(180deg);
+	-webkit-transition: transform 1s;
 }
 
 
