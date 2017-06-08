@@ -6,7 +6,7 @@
 <style>
 /* reset browser styles */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -21,7 +21,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
 	line-height: 1.2;
 }
-ol { 
+ol {
 	padding-left: 1.4em;
 	list-style: decimal;
 }
@@ -32,7 +32,7 @@ ul {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-} 
+}
 /* end reset browser styles */
 
 /* BASIC */
@@ -40,19 +40,58 @@ body {
 	font: 62.5% Verdana, Arial, Helvetica, sans-serif;
 	padding: 20px;
 }
+.mainNav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.mainNav li {
+  float: left;
+  width: 12em;
+}
+.mainNav a {
+  color: #000;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border: 1px dashed #999;
+  border-right: none;
+  padding: 7px 5px 7px 30px;
+  background-color: #E7E7E7;
+  background-image: url(images/nav.png);
+  background-repeat: no-repeat;
+  background-position: 0 2px;
+}
+.mainNav li:last-of-type a {
+  border-right: 1px dashed #999;
+}
+.mainNav a:hover {
+  font-weight: bold;
+  background-color: #B2F511;
+  background-position: 3px 50%;
+}
 
+.home .homeLink {
+  background-color: #fff;
+  background-position: 1% 100%;
+  padding-left: 30px;
+  padding-right: 15px;
+  font-weight: bold;
+}
 
 
 </style>
 </head>
-<body>
-  <ul>
-    <li><a href="/index.html">Home</a></li>
-    <li><a href="/features/">Features</a></li>
-    <li><a href="/experts/">Experts</a></li>
-    <li><a href="/quiz/">Quiz</a></li>
-    <li><a href="/projects/">Projects</a></li>
-    <li><a href="/horoscopes/">Horoscopes</a></li>
+<body class="home">
+  <ul class="mainNav">
+    <li><a class="homeLink" href="/index.html">Home</a></li>
+    <li><a class="featuresLink" href="/features/">Features</a></li>
+    <li><a class="expertsLink" href="/experts/">Experts</a></li>
+    <li><a class="quizLink" href="/quiz/">Quiz</a></li>
+    <li><a class="projectsLink" href="/projects/">Projects</a></li>
+    <li><a class="horoscopesLink" href="/horoscopes/">Horoscopes</a></li>
   </ul>
 </body>
 </html>
